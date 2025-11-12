@@ -13,7 +13,7 @@ services:
         - "traefik.http.middlewares.pgmoposita-https-redirect.redirectscheme.scheme=https"
         - "traefik.http.routers.pgmoposita.middlewares=pgmoposita-https-redirect"
         - "traefik.http.routers.pgmoposita-secure.entrypoints=https"
-        - "traefik.http.routers.pgmoposita-secure.rule=Host(pgmoreno.byronrm.com)"
+        - "traefik.http.routers.pgmoposita-secure.rule=Host(pgmoposita.byronrm.com)"
         - "traefik.http.routers.pgmoposita-secure.tls=true"
         - "traefik.http.routers.pgmoposita-secure.tls.certresolver=http"
         - "traefik.http.routers.pgmoposita-secure.service=pgmoposita"
